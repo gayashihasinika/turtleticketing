@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ticket">
+	<title> Ticket </title>
+	<link rel="stylesheet" type="text/css" href="ticket.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="image/icon.svg" />
+
+</head>
+
+<body>
+
+	<div class="main1">
+		<section class="headline">
+		  <div class="dropdown">
+			<button class="dropbtn"><img
+				src="image/vector-logo-illustration-turtle-gradient-colorful-style_304830-149.avif"
+				class="img2"></button>
+			<div class="dropdown-content">
+			  <a href="index.html">Home</a>
+			  <a href="detail.html">Details</a>
+			  <a href="payment.html">Payments</a>
+			  <a href="confirmation.html">Confirm</a>
+			</div>
+		  </div>
+		  <h3>Buy Tickets</h3>
+		</section>
+		<section class="image">
+		  <ul>
+			<li><a href="https://gayashihasinika.github.io/turtle/" class="home"> Back To Website</a></li>
+		  </ul>
+	  
+		  <form action="detail.html" method="get">
+			<br>
+			<div class="main">
+			  <div class="style">
+	  
+				<p class="new"><b>When are you coming?</b></p>
+				<input type="date" id="date" name="date" class="bff" onchange="setDate()" required="required">
+	  
+			  </div>
+
+			  <div class="age">
+
+				<p class="new"><b>Guests</b></p>
+	  
+				<table border="0" style="width: 100%; background: transparent; text-align: left;">
+				  <tr style="background: transparent;">
+					<th>
+					  <label for="adults"> <b>SL Adults</b></label>
+					</th>
+					<th>
+					  <input type="number" id="sladults" name="sladults" min="1" max="10" class="bff"
+						onkeyup="setPax()">
+					  <label for="adults"> <b>Above 15 yrs</b></label>
+					</th>
+				  </tr>
+	  
+				  <tr style="background: transparent;">
+					<th>
+					  <label for="child"> <b>SL Child</b></label>
+					</th>
+					<th>
+					  <input type="number" id="slchild" name="slchild" min="1" max="10" class="bff"
+						onkeyup="setPax()">
+					  <label for="child"> <b>5 to 14 yrs</b></label>
+					</th>
+				  </tr>
+	  
+				  <tr style="background: transparent;">
+					<th>
+					  <label for="adults"><b>Foreigner Adults</b></label>
+					</th>
+					<th>
+					  <input type="number" id="fradults" name="fradults" min="1" max="10" class="bff"
+						onkeyup="setPax()">
+					  <label for="adults"><b>Above 15 yrs</b></label>
+					</th>
+				  </tr>
+	  
+				  <tr style="background: transparent;">
+					<th>
+					  <label for="child"><b> Foreigner Child</b></label>
+					</th>
+					<th>
+					  <input type="number" id="frchild" name="frchild" min="1" max="10" class="bff"
+						onkeyup="setPax()">
+					  <label for="child"><b> 5 to 14 yrs</b></label>
+					</th>
+				  </tr>
+	  
+				  <tr style="background: transparent;">
+					<th>
+					  <label for="adults"><b>Infants</b></label>
+					</th>
+					<th>
+					  <input type="number" id="infants" name="infants" min="1" max="10" class="bff"
+						onkeyup="setPax()">
+					  <label for="adults"><b>Below 4 yrs</b></label>
+					</th>
+				  </tr>
+	  
+				</table>
+	  
+			  </div>
+			  <div class="one">
+
+				<p class="new" style="margin-top: 2px;"><b>Select Time Duration</b></p>
+	  
+				<table border="0" style="width: 100%; background: transparent; text-align: left;">
+				  <tr style="background: transparent;">
+					<th>
+					  <input type="checkbox" id="time78" name="time78" onclick="setTime('time78')">
+					  <span for=" 07.00 am - 08.00 am"> <b>07.00 am - 08.00 am</b></span>
+					</th>
+					<th>
+					  <input type="checkbox" id="time89" name="time89" onclick="setTime('time89')">
+					  <span for="08.00 am - 09.00 am"><b>08.00 am - 09.00 am</b></span>
+					</th>
+				  </tr>
+				  <tr style="background: transparent;">
+					<th>
+					  <input type="checkbox" id="time910" name="time910" onclick="setTime('time910')">
+					  <span for=" 09.00 am - 10.00 am"> <b>09.00 am - 10.00 am</b></span>
+					</th>
+					<th>
+					  <input type="checkbox" id="time1011" name="time1011" onclick="setTime('time1011')">
+					  <span for="10.00 am - 11.00 am (peak)"><b>10.00 am - 11.00 am (peak)</b></span>
+					</th>
+				  </tr>
+				  <tr style="background: transparent;">
+					<th>
+					  <input type="checkbox" id="time1112" name="time1112" onclick="setTime('time1112')">
+					  <span for=" 11.00 am - 12.00 pm (peak)"><b>11.00 am - 12.00 am (peak)</b></span>
+					</th>
+					<th>
+					  <input type="checkbox" id="time1213" name="time1213" onclick="setTime('time1213')">
+					  <span for="12.00 pm - 13.00 pm (peak)"><b>12.00 pm - 13.00 pm (peak)</b></span>
+					</th>
+				  </tr>
+				  <tr style="background: transparent;">
+					<th>
+					  <input type="checkbox" id="time1314" name="time1314" onclick="setTime('time1314')">
+					  <span for=" 13.00 pm - 14.00 pm"> <b>13.00 pm - 14.00 pm</b></span>
+					</th>
+					<th>
+					  <input type="checkbox" id="time1415" name="time1415" onclick="setTime('time1415')">
+					  <span for="14.00 pm - 15.00 pm"><b>14.00 pm - 15.00 pm</b></span>
+					</th>
+				  </tr>
+	  
+				  <tr style="background: transparent;">
+					<th>
+					  <input type="checkbox" id="time1516" name="time1516" onclick="setTime('time1516')">
+					  <span for=" 15.00 pm - 16.00 pm (peak)"> <b>15.00 pm - 16.00 pm (peak)</b></span>
+					</th>
+					<th>
+					  <input type="checkbox" id="time1617" name="time1617" onclick="setTime('time1617')">
+					  <span for="16.00 pm - 17.00 pm (peak)"><b>16.00 pm - 17.00 pm (peak)</b><span>
+					</th>
+				  </tr>
+	  
+				  <tr style="background: transparent;">
+					<th>
+					  <input type="checkbox" id="time1718" name="time1718" onclick="setTime('time1718')">
+					  <span for=" 17.00 pm - 18.00 pm (peak)"> <b>17.00 pm - 18.00 pm (peak)</b></span>
+					</th>
+					<th>
+					</th>
+				  </tr>
+	  
+				</table>
+	  
+			  </div>
+	  
+			  <br>
+			</div>
+			<br>
+			
+			<table border="1" width="800" align="center">
+				<tr>
+				  <th colspan="3" class="dddd"> Payement Info </th>
+				</tr>
+				<tr>
+				  <th rowspan="4"> Noraml </th>
+				  <th class="aaaa"> Foreigner Adults </th>
+				  <th class="aaaa"> 10 USD <input type="hidden" id="payfradln" name="payfradln" value="10"> </th>
+				</tr>
+				<tr>
+				  <th> Foreigner Child </th>
+				  <th> 5 USD <input type="hidden" id="payfrchln" name="payfrchln" value="5"> </th>
+				</tr>
+				<tr>
+				  <th class="aaaa"> SL Adult </th>
+				  <th class="aaaa"> 4 USD <input type="hidden" id="paysladln" name="paysladln" value="4"> </th>
+				</tr>
+				<tr>
+				  <th> SL Child </th>
+				  <th> 2 USD <input type="hidden" id="payslchln" name="payslchln" value="2"> </th>
+				</tr>
+				<tr>
+				  <th rowspan="4">Peak</th>
+				  <th class="aaaa"> Foreigner Adults </th>
+				  <th class="aaaa"> 13 USD <input type="hidden" id="payfradlp" name="payfradlp" value="13"> </th>
+				</tr>
+				<tr>
+				  <th> Foreigner Child </th>
+				  <th> 8 USD <input type="hidden" id="payfrchlp" name="payfrchlp" value="8"> </th>
+				</tr>
+				<tr>
+				  <th class="aaaa"> SL Adult </th>
+				  <th class="aaaa"> 6 USD <input type="hidden" id="paysladlp" name="paysladlp" value="6"> </th>
+				</tr>
+				<tr>
+				  <th> SL Child </th>
+				  <th> 3 USD <input type="hidden" id="payslchlp" name="payslchlp" value="3"> </th>
+				</tr>
+			  </table>
+			  <br>
+			  <ul>
+				<li class="para"><b>for Infants (SL or Foreigner) (under 4 years) entrance is completely free.</b>
+				</li>
+			  </ul>
+			  <table border="1" width="50%" class="two">
+				<tr>
+				  <th colspan="2" class="dddd">Summary Table</th>
+				</tr>
+				<tr>
+				  <th width="200">Date</th>
+				  <th>
+					<div id="resdate"></div><input type="hidden" name="resdate1" id="resdate1">
+				  </th>
+				</tr>
+				<tr>
+				  <th>Time Duration</th>
+				  <th>
+					<div id="restime"></div><input type="hidden" name="resdurat1" id="resdurat1" value=""><input
+					  type="hidden" name="restime1" id="restime1" value=""><input type="hidden"
+					  name="restimepkoffpk" id="restimepkoffpk" value="0">
+				  </th>
+				</tr>
+				<tr>
+				  <th class="three" colspan="2">Tickets Charges</th>
+				</tr>
+				<tr>
+				  <th>Foreigner Adults</th>
+				  <th>
+					<div id="fradl" style="float: left;"></div><input type="hidden" name="fradl1" id="fradl1"
+					  value="0"><input type="hidden" name="fradlamt1" id="fradlamt1" value="0">
+				  </th>
+				</tr>
+				<tr>
+				  <th>Foreigner Child</th>
+				  <th>
+					<div id="frchildx" style="float: left;"></div><input type="hidden" name="frchildx1"
+					  id="frchildx1" value="0"><input type="hidden" name="frchildamt1" id="frchildamt1"
+					  value="0">
+				  </th>
+				</tr>
+				<tr>
+				  <th>SL Adults</th>
+				  <th>
+					<div id="sladl" style="float: left;"></div><input type="hidden" name="sladl1" id="sladl1"
+					  value="0"><input type="hidden" name="sladlamt1" id="sladlamt1" value="0">
+				  </th>
+				</tr>
+				<tr>
+				  <th>SL Child</th>
+				  <th>
+					<div id="slchildx" style="float: left;"></div><input type="hidden" name="slchildx1"
+					  id="slchildx1" value="0"><input type="hidden" name="slchildamt1" id="slchildamt1"
+					  value="0">
+				  </th>
+				</tr>
+				<tr>
+				  <th>Infants</th>
+				  <th>
+					<div id="intantsx" style="float: left;"></div><input type="hidden" name="intantsx1"
+					  id="intantsx1" value="0"><input type="hidden" name="intantsamt1" id="intantsamt1"
+					  value="0">
+				  </th>
+				</tr>
+				<tr>
+				  <th class="three">Total Payable</th>
+				  <th class="three">
+					<div id="totpayab" style="float: left;"></div><input type="hidden" name="totpayab1"
+					  id="totpayab1" value="0">
+				  </th>
+				</tr>
+		
+			  </table>
+			  <br>
+			  <button type="submit" class="button"> Continue with purchase </button>
+			</form>
+		
+		  
+
+		<br>
+		<br>
+		
+			<footer>
+				<p class="book1"><b>Book Your Tickets Now</b></p>
+						  
+		  
+							  <div class="column">
+								  <div class="header"><b>Get Help</b></div>
+								  <div class="links"><b>Chat with us</b></div>
+								  <a href="tel:+94112292292">
+									  <span>
+										  <b>Call Us</b>
+									  </span>
+								  </a>
+								  <br>
+								  <a href="turtlehatchery@gmail.com">
+									  <span>
+										  <b> Email Us</b>
+									  </span>
+								  </a>
+								  <p class="same">
+									  <span class="glyphicon glyphicon-map-marker"></span>
+									  <a href="https://goo.gl/maps/6qFxWQxvXhQ2"> <b>Hikkaduwa,Srilanka</b></a>
+								  </p>
+							  </div>
+							  <div class="column">
+								  <div class="legal"><b>Legal</b></div>
+								  <div class="links"><b>Terms &amp; Conditions</b></div>
+								  <div class="links"><b>Privacy Policy</b></div>
+								  <br>
+								  <br>
+		  
+								  <i class="fa fa-facebook-official"
+									  style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								  <i class="fa fa-instagram" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								  <i class="fa fa-twitter" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								  <i class="fa fa-youtube-play" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								  <i class="fa fa-envelope" style="font-size:36px"></i>
+								  <p>&copy; 2023 Your Company. All rights reserved.</p>
+							  </div>
+		  
+						  
+			  </footer>
+			
+			</div>
+		</section>
+		
+		
+	<script src="ticket.js"></script>
+</body>
+
+</html>

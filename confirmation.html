@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ticket">
+  <title> Confirmation </title>
+  <link rel="stylesheet" href="ticket.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="image/icon.svg" />
+
+</head>
+
+<body>
+  <div class="main1">
+    <section class="headline">
+      <div class="dropdown">
+        <button class="dropbtn"><img src="image/vector-logo-illustration-turtle-gradient-colorful-style_304830-149.avif" class="img2"></button>
+        <div class="dropdown-content">
+	    <a href ="index.html">Home</a>
+        <a href="detail.html">Details</a>
+        <a href="payment.html">Payments</a>
+        <a href="confirmation.html">Confirm</a>
+        </div>
+      </div>
+      <h3>Buy Tickets</h3>
+    </section>
+    <section class="image">
+      <ul>
+   <li><a href="https://gayashihasinika.github.io/turtle/" class="home">Back To Website</a></li>
+    </ul>
+    <br>
+    <p class="nine">Thank you for your order. Your order has been confirmed with us. You can show this confirmation at
+      the
+      entrance. Following is the summary of your order.</p>
+      <br>
+      
+      <form action="confirmation.html" method="get">
+      
+      	<table border="1" width="50%" class="two">
+      		  <tr>
+		        <th colspan="2" class="dddd">Customer Details</th>
+		      </tr>
+		      <tr>
+		        <th width="200">Full name</th>
+		        <th><div id="cname" style="text-align: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th width="200">Email</th>
+		        <th><div id="emailx" style="text-align: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th width="200">Mobile No</th>
+		        <th><div id="mobilex" style="text-align: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th width="200">Gender</th>
+		        <th><div id="genderx" style="text-align: left;"></div></th>
+		      </tr>	
+      		
+      		  <tr>
+		        <th colspan="2" class="dddd">Card Information</th>
+		      </tr>
+		      <tr>
+		        <th width="200">Card Number</th>
+		        <th><div id="cardnox" style="text-align: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th width="200">Expiry Date</th>
+		        <th><div id="cexpridt" style="text-align: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th width="200">CVC/CVV</th>
+		        <th><div id="ccvc" style="text-align: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th width="200">Name on Card</th>
+		        <th><div id="cnameonc" style="text-align: left;"></div></th>
+		      </tr>
+      		
+		      <tr>
+		        <th colspan="2" class="dddd">Order Summary</th>
+		      </tr>
+		      <tr>
+		        <th width="200">Date</th>
+		        <th><div id="resdate" style="text-align: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th>Time Duration</th>
+		        <th><div id="restime" style="text-align: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th class="three" colspan="2">Tickets Charges</th>
+		      </tr>
+		      <tr>
+		        <th>Foreigner Adults</th>
+		        <th><div id="fradl" style="float: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th>Foreigner Child</th>
+		        <th><div id="frchildx" style="float: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th>SL Adults</th>
+		        <th><div id="sladl" style="float: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th>SL Child</th>
+		        <th><div id="slchildx" style="float: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th>Infants</th>
+		        <th><div id="intantsx" style="float: left;"></div></th>
+		      </tr>
+		      <tr>
+		        <th class="three" >Total Payable</th>
+		        <th class="three"><div id="totpayab" style="float: left;"></div></th>
+		      </tr>
+		
+		    </table>
+            <br>
+      
+      	<input type="hidden" name="resdate1A" id="resdate1A">
+        <input type="hidden" name="restime1A" id="restime1A" value="">
+        
+        <input type="hidden" name="forgnadlA" id="forgnadlA" value="">
+      	<input type="hidden" name="forgnadlamtA" id="forgnadlamtA" value="">
+      	
+      	<input type="hidden" name="forgnchlA" id="forgnchlA" value="">
+      	<input type="hidden" name="forgnchlamtA" id="forgnchlamtA" value="">
+      	
+      	<input type="hidden" name="sladlA" id="sladlA" value="">
+      	<input type="hidden" name="sladlamtA" id="sladlamtA" value="">
+      	
+      	<input type="hidden" name="slchlA" id="slchlA" value="">
+      	<input type="hidden" name="slchlamtA" id="slchlamtA" value="">
+      	
+      	<input type="hidden" name="instA" id="instA" value="">
+      	<input type="hidden" name="instamtA" id="instamtA" value="">
+      	
+      	<input type="hidden" name="totpayab1A" id="totpayab1A" value="">
+      	
+      	<input type="hidden" name="fnameA" id="fnameA" value="">
+      	<input type="hidden" name="phoneA" id="phoneA" value="">
+      	<input type="hidden" name="emailA" id="emailA" value="">
+      	<input type="hidden" name="genderA" id="genderA" value="">
+      	
+      	<input type="hidden" name="cnumberA" id="cnumberA" value="">
+      	<input type="hidden" name="expirymonthA" id="expirymonthA" value="">
+      	<input type="hidden" name="expiryyearA" id="expiryyearA" value="">
+      	<input type="hidden" name="cvvA" id="cvvA" value="">
+      	<input type="hidden" name="nameA" id="nameA" value="">
+      	
+      	<input type="hidden" name="nameA" id="nameA" value="">
+      	<input type="hidden" name="nameA" id="nameA" value="">
+      	<input type="hidden" name="nameA" id="nameA" value="">
+      	
+      	
+      	<script type="text/javascript">
+		var data = window.location.search;
+		var parms = new URLSearchParams(data);
+		console.log(parms);
+		var resdatex = parms.get("resdate1A");
+		var timedur = parms.get("restime1A");
+		var forgnadl = parms.get("forgnadlA");
+		var forgnadlamt = parms.get("forgnadlamtA");
+		var forgnchl = parms.get("forgnchlA");
+		var forgnchlamt = parms.get("forgnchlamtA");
+		var sladl = parms.get("sladlA");
+		var sladlamt = parms.get("sladlamtA");
+		var slchl = parms.get("slchlA");
+		var slchlamt = parms.get("slchlamtA");
+		var inst = parms.get("instA");
+		var instamt = parms.get("instamtA");
+		var totpayab1ret = parms.get("totpayab1A");
+		
+		var fname = parms.get("fnameA");
+		var phone = parms.get("phoneA");
+		var email = parms.get("emailA");
+		var gender = parms.get("genderA");
+		
+		var cnumber = parms.get("cnumber");
+		var expirymonth = parms.get("expirymonth");
+		var expiryyear = parms.get("expiryyear");
+		var cvv = parms.get("cvv");
+		var name = parms.get("name");
+		
+		document.getElementById('resdate1A').value = resdatex;
+		document.getElementById('restime1A').value = timedur;
+		
+		document.getElementById('forgnadlA').value = forgnadl;
+		document.getElementById('forgnadlamtA').value = forgnadlamt;
+		document.getElementById('forgnchlA').value = forgnchl;
+		document.getElementById('forgnchlamtA').value = forgnchlamt;
+		document.getElementById('sladlA').value = sladl;
+		document.getElementById('sladlamtA').value = sladlamt;
+		document.getElementById('slchlA').value = slchl;
+		document.getElementById('slchlamtA').value = slchlamt;
+		document.getElementById('instA').value = inst;
+		document.getElementById('instamtA').value = instamt;
+		document.getElementById('totpayab1A').value = totpayab1ret;
+		
+		document.getElementById('fnameA').value = fname;
+		document.getElementById('phoneA').value = phone;
+		document.getElementById('emailA').value = email;
+		document.getElementById('genderA').value = gender;
+		
+		document.getElementById('cnumberA').value = cnumber;
+		document.getElementById('expirymonthA').value = expirymonth;
+		document.getElementById('expiryyearA').value = expiryyear;
+		document.getElementById('cvvA').value = cvv;
+		document.getElementById('nameA').value = name;
+		
+		
+		document.getElementById('cname').innerHTML = fname;
+		document.getElementById('emailx').innerHTML = email;
+		document.getElementById('mobilex').innerHTML = phone;
+		document.getElementById('genderx').innerHTML = gender;
+		
+		document.getElementById('cardnox').innerHTML = cnumber;
+		document.getElementById('cexpridt').innerHTML = expirymonth+"/"+expiryyear;
+		document.getElementById('ccvc').innerHTML = cvv;
+		document.getElementById('cnameonc').innerHTML = name;
+		
+		document.getElementById('resdate').innerHTML = resdatex;
+		document.getElementById('restime').innerHTML = timedur;
+		var ElmFATot = forgnadl * forgnadlamt;
+		document.getElementById('fradl').innerHTML = forgnadl+" x "+forgnadlamt+" USD  = "+ElmFATot+ " USD";
+		
+		var ElmFCTot = forgnchl * forgnchlamt;
+		document.getElementById('frchildx').innerHTML = forgnchl+" x "+forgnchlamt+" USD  = "+ElmFCTot+ " USD";
+		
+		var ElmSATot = sladl * sladlamt;
+		document.getElementById('sladl').innerHTML = sladl+" x "+sladlamt+" USD  = "+ElmSATot+ " USD";
+		
+		var ElmSCTot = slchl * slchlamt;
+		document.getElementById('slchildx').innerHTML = slchl+" x "+slchlamt+" USD  = "+ElmSCTot+ " USD";
+		
+		var ElmINTot = inst * instamt;
+		document.getElementById('intantsx').innerHTML = inst+" x "+instamt+" USD  = "+ElmINTot+ " USD";
+		
+		document.getElementById('totpayab').innerHTML = totpayab1ret+ " USD";
+		</script>
+		
+	</form>	
+      
+      <footer>
+        <p class="book1"><b>Book Your Tickets Now</b></p>
+      
+    
+        <div class="column" >
+          <div class="header"><b>Get Help</b></div>
+                                     <div class="links"><b>Chat with us</b></div>
+                                     <a href="tel:+94112292292">
+                                        <span>
+                                          <b>Call Us</b>
+                                        </span>
+                                        </a>
+                                        <br>
+                                        <a href="turtlehatchery@gmail.com">
+                                           <span>
+                                             <b>Email Us</b>
+                                           </span>
+                                        </a>
+                                        <p class="same">
+                                           <span class="glyphicon glyphicon-map-marker"></span>
+                                           <a href="https://goo.gl/maps/6qFxWQxvXhQ2"><b> Hikkaduwa,Srilanka</b></a>
+                                         </p> 
+        </div>
+        <div class="column" >
+          <div class="legal"><b>Legal</b></div>
+                         <div class="links"><b>Terms &amp; Conditions</b></div>
+                         <div class="links"><b>Privacy Policy</b></div>
+                         <br>
+                         <br>
+                        
+                <i class="fa fa-facebook-official" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-instagram" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-twitter" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-youtube-play" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-envelope" style="font-size:36px"></i>
+				<p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+        
+      
+      </footer>
+    </section>
+    <script src="ticket.js"></script>
+</body>

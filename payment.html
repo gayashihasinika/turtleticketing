@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ticket">
+  <title> Payment </title>
+  <link rel="stylesheet" href="ticket.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <link rel="icon" href="image/icon.svg" />
+</head>
+
+<body>
+  <div class="main1">
+    <section class="headline">
+      <div class="dropdown">
+        <button class="dropbtn"><img src="image/vector-logo-illustration-turtle-gradient-colorful-style_304830-149.avif" class="img2"></button>
+        <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="detail.html">Details</a>
+        <a href="payment.html">Payments</a>
+        <a href="confirmation.html">Confirm</a>
+        </div>
+      </div>
+      <h3>Buy Tickets</h3>
+    </section>
+    <section class="image">
+      <ul>
+        <li><a href="https://gayashihasinika.github.io/turtle/" class="home">Back To Website</a></li>
+      </ul>
+    <br>
+    <div class="cccc">
+    
+       <form action="confirmation.html" method="get">
+      
+      	<input type="hidden" name="resdate1A" id="resdate1A">
+        <input type="hidden" name="restime1A" id="restime1A" value="">
+        
+        <input type="hidden" name="forgnadlA" id="forgnadlA" value="">
+      	<input type="hidden" name="forgnadlamtA" id="forgnadlamtA" value="">
+      	
+      	<input type="hidden" name="forgnchlA" id="forgnchlA" value="">
+      	<input type="hidden" name="forgnchlamtA" id="forgnchlamtA" value="">
+      	
+      	<input type="hidden" name="sladlA" id="sladlA" value="">
+      	<input type="hidden" name="sladlamtA" id="sladlamtA" value="">
+      	
+      	<input type="hidden" name="slchlA" id="slchlA" value="">
+      	<input type="hidden" name="slchlamtA" id="slchlamtA" value="">
+      	
+      	<input type="hidden" name="instA" id="instA" value="">
+      	<input type="hidden" name="instamtA" id="instamtA" value="">
+      	
+      	<input type="hidden" name="totpayab1A" id="totpayab1A" value="">
+      	
+      	<input type="hidden" name="fnameA" id="fnameA" value="">
+      	<input type="hidden" name="phoneA" id="phoneA" value="">
+      	<input type="hidden" name="emailA" id="emailA" value="">
+      	<input type="hidden" name="genderA" id="genderA" value="">
+      	      	      	
+      	
+      	<script type="text/javascript">
+		var data = window.location.search;
+		var parms = new URLSearchParams(data);
+		console.log(parms);
+		var resdatex = parms.get("resdate1A");
+		var timedur = parms.get("restime1A");
+		var forgnadl = parms.get("forgnadlA");
+		var forgnadlamt = parms.get("forgnadlamtA");
+		var forgnchl = parms.get("forgnchlA");
+		var forgnchlamt = parms.get("forgnchlamtA");
+		var sladl = parms.get("sladlA");
+		var sladlamt = parms.get("sladlamtA");
+		var slchl = parms.get("slchlA");
+		var slchlamt = parms.get("slchlamtA");
+		var inst = parms.get("instA");
+		var instamt = parms.get("instamtA");
+		var totpayab1ret = parms.get("totpayab1A");
+		
+		var fname = parms.get("fname");
+		var phone = parms.get("phone");
+		var email = parms.get("email");
+		var gender = parms.get("gender");
+		
+		document.getElementById('resdate1A').value = resdatex;
+		document.getElementById('restime1A').value = timedur;
+		
+		document.getElementById('forgnadlA').value = forgnadl;
+		document.getElementById('forgnadlamtA').value = forgnadlamt;
+		document.getElementById('forgnchlA').value = forgnchl;
+		document.getElementById('forgnchlamtA').value = forgnchlamt;
+		document.getElementById('sladlA').value = sladl;
+		document.getElementById('sladlamtA').value = sladlamt;
+		document.getElementById('slchlA').value = slchl;
+		document.getElementById('slchlamtA').value = slchlamt;
+		document.getElementById('instA').value = inst;
+		document.getElementById('instamtA').value = instamt;
+		document.getElementById('totpayab1A').value = totpayab1ret;
+		
+		document.getElementById('fnameA').value = fname;
+		document.getElementById('phoneA').value = phone;
+		document.getElementById('emailA').value = email;
+		document.getElementById('genderA').value = gender;
+		</script>	
+    
+      <p class="bbbb"><b>Enter Your Payment Details</b></p>
+      <img src="image/dc-Cover-nt9f3jm026m55p2i7gqvg6cbi1-20160817005247.Medi.jpeg" class="img1">
+      <br>
+      <br>
+    
+      <label for="cnumber" class="five"><b>Card Number:</b> </label>
+      <input type="text" id="cnumber" name="cnumber" class="six" placeholder="1111-2222-3333-4444" value="" required="required"><br>
+      <label for="expiry-month" class="five"><b>Expiry Date:</b></label>
+      <select id="expirymonth" name="expirymonth" class="month" required="required">
+        <option value=""></option>
+        <option value="01">01 - January</option>
+        <option value="02">02 - February</option>
+        <option value="03">03 - March</option>
+        <option value="04">04 - April</option>
+        <option value="05">05 - May</option>
+        <option value="06">06 - June</option>
+        <option value="07">07 - July</option>
+        <option value="08">08 - August</option>
+        <option value="09">09 - September</option>
+        <option value="10">10 - October</option>
+        <option value="11">11 - November</option>
+        <option value="12">12 - December</option>
+      </select>
+      <select id="expiryyear" name="expiryyear" class="year" required="required">
+        <option value=""></option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+        <option value="2031">2031</option>
+        <option value="2032">2032</option>
+        <option value="2033">2033</option>
+        <option value="2034">2034</option>
+        <option value="2035">2035</option>
+        <option value="2036">2036</option>
+        <option value="2037">2037</option>
+        <option value="2038">2038</option>
+        <option value="2039">2039</option>
+        <option value="2040">2040</option>
+        <option value="2041">2041</option>
+        <option value="2042">2042</option>
+      </select>
+      <br>
+      <label for="cvv" class="five"><b>CVC/CVV: </b></label>
+      <input type="text" id="cvv" name="cvv" class="six" placeholder="123" required="required"><br>
+      <label for="name" class="five"><b>Name on Card: </b></label>
+      <input type="text" id="name" name="name" class="six" placeholder="Enter the name" required="required">
+    <br>
+     <br> 
+      <i class="fa fa-cc-discover" style="font-size:36px;"></i>&nbsp;&nbsp;
+      <i class="fa fa-cc-mastercard" style="font-size:36px;"></i>&nbsp;&nbsp;
+      <i class="fa fa-cc-visa" style="font-size:36px;"></i>&nbsp;&nbsp;
+      <i class="fa fa-cc-amex" style="font-size:36px;"></i>&nbsp;&nbsp;
+      <i class="fa fa-cc-paypal" style="font-size:36px"></i>
+      <br>
+      
+  
+      <button type="submit" class="button2">Pay Now</button>
+     </form> 
+    </div>
+    <br>
+    <footer>
+      <p class="book1"><b>Book Your Tickets Now</b></p>
+    
+  
+      <div class="column" >
+        <div class="header"><b>Get Help</b></div>
+                                   <div class="links"><b>Chat with us</b></div>
+                                   <a href="tel:+94112292292">
+                                      <span>
+                                        <b> Call Us</b>
+                                      </span>
+                                      </a>
+                                      <br>
+                                      <a href="turtlehatchery@gmail.com">
+                                         <span>
+                                           <b> Email Us</b>
+                                         </span>
+                                      </a>
+                                      <p class="same">
+                                         <span class="glyphicon glyphicon-map-marker"></span>
+                                         <a href="https://goo.gl/maps/6qFxWQxvXhQ2"><b> Hikkaduwa,Srilanka</b></a>
+                                       </p> 
+      </div>
+      <div class="column" >
+        <div class="legal"><b>Legal</b></div>
+                       <div class="links"><b>Terms &amp; Conditions</b></div>
+                       <div class="links"><b>Privacy Policy</b></div>
+                       <br>
+                       <br>
+                      
+              <i class="fa fa-facebook-official" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-instagram" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-twitter" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-youtube-play" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-envelope" style="font-size:36px"></i>
+              <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+      
+    
+    </footer>
+
+  </section>
+  </div>
+  <script src="ticket.js"></script>
+</body>
+</html>

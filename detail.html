@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ticket">
+  <title> Details </title>
+  <link rel="stylesheet" href="ticket.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <link rel="icon" href="image/icon.svg" />
+</head>
+
+<body>
+	
+	
+  <div class="main1">
+    <section class="headline">
+      <div class="dropdown">
+        <button class="dropbtn"><img src="image/vector-logo-illustration-turtle-gradient-colorful-style_304830-149.avif" class="img2"></button>
+        <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="detail.html">Details</a>
+        <a href="payment.html">Payments</a>
+        <a href="confirmation.html">Confirm</a>
+        </div>
+      </div>
+      <h3>Buy Tickets</h3>
+    </section>
+    <section class="image">
+      <ul>
+   <li><a href="https://gayashihasinika.github.io/turtle/" class="home">Back To Website</a></li>
+    </ul>
+    <br>
+    <div class="ten">
+      <form action="payment.html" method="get">
+      
+      	<input type="hidden" name="resdate1A" id="resdate1A">
+        <input type="hidden" name="restime1A" id="restime1A" value="">
+        
+        <input type="hidden" name="forgnadlA" id="forgnadlA" value="">
+      	<input type="hidden" name="forgnadlamtA" id="forgnadlamtA" value="">
+      	
+      	<input type="hidden" name="forgnchlA" id="forgnchlA" value="">
+      	<input type="hidden" name="forgnchlamtA" id="forgnchlamtA" value="">
+      	
+      	<input type="hidden" name="sladlA" id="sladlA" value="">
+      	<input type="hidden" name="sladlamtA" id="sladlamtA" value="">
+      	
+      	<input type="hidden" name="slchlA" id="slchlA" value="">
+      	<input type="hidden" name="slchlamtA" id="slchlamtA" value="">
+      	
+      	<input type="hidden" name="instA" id="instA" value="">
+      	<input type="hidden" name="instamtA" id="instamtA" value="">
+      	
+      	<input type="hidden" name="totpayab1A" id="totpayab1A" value="">
+      	      	      	
+      	
+      	<script type="text/javascript">
+		var data = window.location.search;
+		var parms = new URLSearchParams(data);
+		console.log(parms);
+		var resdatex = parms.get("date");
+		var timedur = parms.get("resdurat1");
+		var forgnadl = parms.get("fradl1");
+		var forgnadlamt = parms.get("fradlamt1");
+		var forgnchl = parms.get("frchildx1");
+		var forgnchlamt = parms.get("frchildamt1");
+		var sladl = parms.get("sladl1");
+		var sladlamt = parms.get("sladlamt1");
+		var slchl = parms.get("slchildx1");
+		var slchlamt = parms.get("slchildamt1");
+		var inst = parms.get("intantsx1");
+		var instamt = parms.get("intantsamt1");
+		var totpayab1ret = parms.get("totpayab1");
+		
+		document.getElementById('resdate1A').value = resdatex;
+		document.getElementById('restime1A').value = timedur;
+		
+		document.getElementById('forgnadlA').value = forgnadl;
+		document.getElementById('forgnadlamtA').value = forgnadlamt;
+		document.getElementById('forgnchlA').value = forgnchl;
+		document.getElementById('forgnchlamtA').value = forgnchlamt;
+		document.getElementById('sladlA').value = sladl;
+		document.getElementById('sladlamtA').value = sladlamt;
+		document.getElementById('slchlA').value = slchl;
+		document.getElementById('slchlamtA').value = slchlamt;
+		document.getElementById('instA').value = inst;
+		document.getElementById('instamtA').value = instamt;
+		document.getElementById('totpayab1A').value = totpayab1ret;
+		</script>
+      	
+        <p class="bbbb"><b>Enter Your Details</b></p>
+        <div class="row">
+          <div class="column" >
+            <label for="fname" class="five"><b>Full name:</b> </label>
+            <p class="seven">Same as on your ID</p>
+            <input type="text" id="fname" name="fname" class="six" placeholder="Enter your full name" required="required">
+            <p class="eight"><b>Please add the Full name</b></p>
+            <label for="phone" class="five"><b>Mobile Number: </b></label>
+            <p class="seven"><b>We may reach out for booking updates here over SMS/Whatsapp</b></p>
+            <input type="tel" id="phone" name="phone" class="six" placeholder="Enter your mobile number" required="required">
+            <p class="eight"><b>Add a valid mobile number</b></p>
+          </div>
+          <div class="column" >
+            <label for="email" class="five"><b>Email:</b></label>
+                <p class="seven"><b>We'll send your ticket here</b></p>
+                <input type="email" id="email" name="email" class="six" placeholder="Enter your email" required="required">
+                <p class="eight"><b>Add a valid email ID</b></p>
+                <label for="email" class="five"><b>Confirm Email:</b></label>
+                <p class="seven"><b>Just to ensure we've got this right</b></p>
+                <input type="email" id="email2" name="email2" class="six" placeholder="Confirm your email address" required="required">
+                <p class="eight"><b>Add a valid email ID</b></p>
+      <label for="gender" class="five"><b>Gender:</b></label>
+                <select name="gender" id="gender" class="six">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+          </div>
+        </div>
+         
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="submit" class="button1">Continue with Purchase</button>
+		<br>
+				
+      </form>
+      </div>
+    
+    <br>
+    <br>
+    <footer>
+      <p class="book1"><b>Book Your Tickets Now</b></p>
+    
+  
+      <div class="column" >
+        <div class="header"><b>Get Help</b></div>
+                                   <div class="links"><b>Chat with us</b></div>
+                                   <a href="tel:+94112292292">
+                                      <span>
+                                        <b>Call Us</b>
+                                      </span>
+                                      </a>
+                                     <br>
+                                      <a href="turtlehatchery@gmail.com">
+                                         <span>
+                                           <b>Email Us</b>
+                                         </span>
+                                      </a>
+                                      <p class="same">
+                                         <span class="glyphicon glyphicon-map-marker"></span>
+                                         <a href="https://goo.gl/maps/6qFxWQxvXhQ2"><b>Hikkaduwa,Srilanka</a></b>
+                                       </p> 
+      </div>
+      <div class="column" >
+        <div class="legal"><b>Legal</b></div>
+                       <div class="links"><b>Terms &amp; Conditions</b></div>
+                       <div class="links"><b>Privacy Policy</b></div>
+                       <br>
+                      
+              <i class="fa fa-facebook-official" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-instagram" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-twitter" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-youtube-play" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-envelope" style="font-size:36px"></i>
+              <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+      
+  
+    </footer>
+
+    </section>
+ </div>
+  <script src="ticket.js"></script>
+</body>
+</html>
